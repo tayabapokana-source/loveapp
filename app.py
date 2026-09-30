@@ -52,7 +52,7 @@ elif st.session_state.slide == 2:
         st.warning("Foto 'foto1.jpg' belum terbaca. Pastikan format nama file di GitHub sudah huruf kecil semua ya!")
 
 elif st.session_state.slide == 3:
-    st.title("Slide 3: Komitmen & Masa Depan 💖")
+    st.title("Slide 3: KELA KER LIER SKRIPSI KENEH AWOWKWOWKWOK")
     
     # Membungkus kata-kata panjang penguat hubungan menggunakan tanda kutip tiga (""")
     pesan_slide_3 = """
