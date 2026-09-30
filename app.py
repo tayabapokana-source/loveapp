@@ -108,7 +108,7 @@ with kolom2:
 # BACKSOUND MUSIK ROMANTIS (BERKAS LOKAL GITHUB)
 # ==============================================================================
 st.write("---")
-st.subheader("🎵 Lagu untuk Kamu")
+st.subheader("🎵 lagu pengingat jika aku masih hidup")
 # Sistem akan langsung membaca file mp3 yang kamu upload di folder GitHub yang sama
 st.audio("If I'm James Dean, You're Audrey Hepburn (Acoustic).mp3", format="audio/mp3")
 
