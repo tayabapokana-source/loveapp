@@ -12,9 +12,24 @@ if "slide" not in st.session_state:
 # ==============================================================================
 if st.session_state.slide == 1:
     st.balloons() # Efek balon berhamburan khusus di slide pembuka!
-    st.title("Slide 1: Halo Sayang! Welcome 🥰")
-    st.write("Website mini ini iseng gabut awowkwowkwok.")
-    st.info("Klik tombol 'Slide Selanjutnya'! 👇")
+    st.title("Halo Sayang! 🥰")
+    
+    # Membungkus teks panjang menggunakan kutip tiga agar rapi dan aman dari error
+    pesan_romantis = """
+    Melalui halaman kecil yang aku rakit , aku cuma ingin meluangkan waktu sejenak untuk menuliskan apa yang sering kali sulit aku ucapkan langsung lewat kata-kata. Aku ingin kamu tahu betapa beruntung dan bersyukurnya aku karena memiliki kamu di dalam hidupku. Terima kasih ya, sudah menjadi sosok yang luar biasa, yang selalu sabar menghadapi segala kurangku, dan selalu menjadi alasan di balik senyum paling tulus yang aku miliki sampai detik ini.
+
+    Dunia kadang terasa sangat bising, melelahkan, dan penuh dengan hal-hal yang membuat kepala jadi pusing. Tapi, setiap kali aku melihat kamu, mengobrol denganmu, atau sekadar memikirkan bahwa aku punya kamu di sisiku, semua rasa lelah itu rasanya menguap begitu saja. Kehadiranmu itu seperti tempat bernaung paling nyaman buatku. Bersamamu, aku tidak pernah merasa perlu berpura-pura menjadi orang lain. Aku bisa menjadi diriku yang seutuhnya, karena aku tahu aku dicintai oleh orang yang tepat.
+
+    Terima kasih sudah memilih untuk tinggal, ya. Terima kasih untuk setiap tawa kecil yang kita bagi bersama, untuk dukungan-dukungan sederhana yang selalu menguatkan aku saat dunia sedang tidak berjalan baik, dan untuk kasih sayang hangat yang selalu kamu berikan. Menghabiskan waktu bersamamu adalah momen-momen favoritku yang tidak akan pernah bosan untuk aku ulangi. 
+
+    Aku tidak tahu apa yang akan terjadi di masa depan nanti, tapi satu hal yang aku tahu pasti: aku ingin terus berjalan bersamamu, melewati hari demi hari, merajut lebih banyak cerita indah, dan merayakan setiap kebahagiaan-kebahagiaan kecil di hidup ini berdua denganmu. Tetap jadi pacar hebatku yang menggemaskan ya. I love you so much, hari ini, esok, dan seterusnya! ❤️✨
+    """
+    
+    # Menampilkan teks ke dalam kotak info yang estetik
+    st.info(pesan_romantis)
+    
+    st.write("---")
+    st.info("Klik tombol 'Slide Selanjutnya' ya! 👇")
 
 elif st.session_state.slide == 2:
     st.title("Slide 2: THANKS FOR MEMORIES 📸")
