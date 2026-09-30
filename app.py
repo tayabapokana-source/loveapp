@@ -32,15 +32,24 @@ if st.session_state.slide == 1:
     st.info("Klik tombol 'Slide Selanjutnya' ya! 👇")
 
 elif st.session_state.slide == 2:
-    st.title("Slide 2: THANKS FOR MEMORIES 📸")
-    st.write("LOVYU.")
+    st.title("Slide 2: Setiap Detik Berharga ✨")
     
-    # Menampilkan Foto Pertama
+    # Membungkus kata-kata romantis yang panjang menggunakan tanda kutip tiga (""")
+    pesan_slide_2 = """
+    Katanya, sebuah foto bisa menyimpan ribuan kenangan indah yang tidak akan pernah pudar oleh waktu. Dan setiap kali aku melihat foto di bawah ini, aku selalu diingatkan tentang betapa indahnya momen-momen yang sudah kita laluin bersama selama ini. Kadang aku suka tersenyum sendiri waktu mengingat betapa serunya setiap obrolan kita, tawa lepas kita, dan bagaimana semua hal yang awalnya biasa saja berubah menjadi jauh lebih menyenangkan kalau aku sedang berada di dekat kamu.
+
+    Bersamamu, waktu rasanya berjalan begitu cepat, sampai-sampai aku selalu berharap bisa memutar balik waktu atau menghentikan detiknya sebentar saja, hanya untuk menikmati kehadiranmu lebih lama lagi. Foto ini bukan cuma sekadar gambar digital di layar buatku, tapi ini adalah bukti nyata dari salah satu hari terbaik dalam hidupku, hari di mana aku sadar bahwa bahagia itu ternyata sangat sederhana: cukup dengan melihat kamu bahagia dan ada di sisiku. Terima kasih ya sudah mengizinkan aku menjadi bagian dari memori indah ini.
+    """
+    
+    # Menampilkan teks narasi romantis di atas foto
+    st.write(pesan_slide_2)
+    st.write("") # Memberi jarak kosong/spasi agar tidak terlalu rapat
+    
+    # Menampilkan Foto Pertama yang sudah diganti namanya di GitHub kamu
     try:
-        # Gunakan use_container_width=True sesuai standar Streamlit terbaru
-        st.image("foto1.jpg", caption="TERIMAKASIH ATAS KERJA KERAS KAMU SAMPE SEKARANG YA ✨", use_container_width=True)
+        st.image("foto1.jpg", caption="THANKS FOR MOMENT", use_container_width=True)
     except Exception as e:
-        st.warning("Foto 'foto1.jpg' belum terbaca di GitHub. Pastikan nama file dan eksetensinya sudah sama persis ya!")
+        st.warning("Foto 'foto1.jpg' belum terbaca. Pastikan format nama file di GitHub sudah huruf kecil semua ya!")
 
 elif st.session_state.slide == 3:
     st.title("Slide 3: Menatap Masa Depan 💖")
