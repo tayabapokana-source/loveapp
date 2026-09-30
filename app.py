@@ -105,10 +105,10 @@ with kolom2:
             st.rerun()
 
 # ==============================================================================
-# BONUS: BACKSOUND MUSIK ROMANTIS (Berjalan di semua slide)
+# BACKSOUND MUSIK ROMANTIS (BERKAS LOKAL GITHUB)
 # ==============================================================================
 st.write("---")
 st.subheader("🎵 Lagu untuk Kamu")
-# Kamu bisa mengganti URL di bawah ini dengan link file .mp3 lagu kesukaan kalian asli
-LINK_LAGU = "https://22832-sleeping-with-sirens.mp3.pm/song/10315886-if-i-m-james-dean-you-re-audrey-hepburn-acoustic-version/"
-st.audio(LINK_LAGU, format="audio/mp3")
+# Sistem akan langsung membaca file mp3 yang kamu upload di folder GitHub yang sama
+st.audio("If I'm James Dean, You're Audrey Hepburn (Acoustic).mp3", format="audio/mp3")
+
