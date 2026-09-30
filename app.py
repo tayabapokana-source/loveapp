@@ -32,7 +32,7 @@ if st.session_state.slide == 1:
     st.info("Klik tombol 'Slide Selanjutnya' ya! 👇")
 
 elif st.session_state.slide == 2:
-    st.title("Slide 2: Setiap Detik Berharga ✨")
+    st.title("Slide 2: lierrrr ahhhh")
     
     # Membungkus kata-kata romantis yang panjang menggunakan tanda kutip tiga (""")
     pesan_slide_2 = """
@@ -52,21 +52,32 @@ elif st.session_state.slide == 2:
         st.warning("Foto 'foto1.jpg' belum terbaca. Pastikan format nama file di GitHub sudah huruf kecil semua ya!")
 
 elif st.session_state.slide == 3:
-    st.title("Slide 3: Menatap Masa Depan 💖")
-    st.write("Terima kasih ya sudah selalu sabar dan ada buat aku sampai detik ini.")
+    st.title("Slide 3: Komitmen & Masa Depan 💖")
     
-    # Menampilkan Foto Kedua
+    # Membungkus kata-kata panjang penguat hubungan menggunakan tanda kutip tiga (""")
+    pesan_slide_3 = """
+    Sayang, di slide ketiga ini aku ingin menyampaikan sesuatu yang mungkin jarang aku obrolin secara serius, tapi selalu jadi isi doa dan pikiranku setiap hari. Aku tahu perjalananku sekarang mungkin masih berproses, masih banyak hal yang sedang aku perjuangkan, dan jalanku menuju mapan belum sepenuhnya sempurna. Tapi di balik semua kerja keras dan lelahku hari ini, ada kamu yang selalu jadi alasan terbesarku untuk tidak pernah menyerah.
+
+    Tunggu aku sukses nanti ya. Tolong temani aku sebentar lagi sampai semua mimpi, rencana, dan cita-cita besar yang sering kita obrolin bersama bisa terwujud nyata satu per satu. Aku sedang berusaha sebaik mungkin untuk membangun masa depan yang layak, tempat di mana kita bisa terus bersama tanpa perlu mengkhawatirkan apa pun lagi. Terima kasih banyak ya sudah selalu sabar, percaya dengan prosesku, dan tetap menggenggam tanganku sejauh ini. Aku berjanji, segala sabar dan setiamu hari ini tidak akan pernah sia-sia.
+    """
+    
+    # Menampilkan teks narasi komitmen di atas foto
+    st.write(pesan_slide_3)
+    st.write("") # Memberi spasi
+    
+    # Menampilkan Foto Kedua yang sudah disesuaikan namanya di GitHub kamu
     try:
-        st.image("foto2.jpg", caption="SEMOGA YA SEMOGA 🥰", use_container_width=True)
+        st.image("foto2.jpg", caption="CING AH KER LALIER SKRIPSI", use_container_width=True)
     except Exception as e:
-        st.warning("Foto 'foto2.jpg' belum terbaca di GitHub.")
+        st.warning("Foto 'foto2.jpg' belum terbaca. Pastikan format nama file di GitHub sudah sama persis ya!")
+
 
 elif st.session_state.slide == 4:
     st.snow() # Efek salju turun di slide terakhir!
     st.title("Slide 4: MWEHEHEHE 💌")
     
     st.success(
-        "TUNGGU AKU SUKSES NANTI YA 💖✨"
+        "LOVYUMOREEEEEEE 💖✨"
     )
     
     # Fitur Interaktif Tombol Kangen
